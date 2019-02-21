@@ -96,7 +96,9 @@ export default {
     border-left: 2px solid #9e9e9e;
   }
 }
-@media screen {
-  
+@media only screen and (max-width: 768px) {
+  .top-nav {
+    padding: 0 35px;
+  }
 }
 </style>
