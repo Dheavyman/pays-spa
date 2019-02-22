@@ -5,7 +5,7 @@
         <div class="categories-header">
           <h6>CATEGORIES</h6>
         </div>
-        <CategoriesSection />
+        <CategoriesSection :categories="categories" />
       </div>
       <div class="col s12 m8 l9">
         <div class="row">
@@ -16,7 +16,7 @@
       </div>
     </div>
     <div class="row">
-      <ContentCategories />
+      <ContentCategories :products="products" />
     </div>
   </div>
 </template>
@@ -28,6 +28,16 @@ import ContentCategories from '../content/ContentCategories.vue';
 
 export default {
   name: 'HomePage',
+  props: {
+    products: {
+      type: Array,
+      required: true,
+    },
+    categories: {
+      type: Array,
+      required: true,
+    },
+  },
   components: {
     CategoriesSection,
     SliderSection,

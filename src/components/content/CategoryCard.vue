@@ -6,15 +6,15 @@
           <img src="../../assets/sample-image.jpg">
         </div>
         <div class="card-content">
-          <p>Lorem ipsum</p>
+          <p>{{product.name}}</p>
           <i class="marked material-icons">star</i>
           <i class="marked material-icons">star</i>
           <i class="marked material-icons">star</i>
           <i class="marked material-icons">star</i>
           <i class="unmarked material-icons">star_border</i>
           <div class="price">
-            <span class="strike">&#8358;15,000.00</span>
-            <span>&#8358;15,000.00</span>
+            <span class="strike">&#8358;{{product.old_price}}</span>
+            <span>&#8358;{{product.price}}</span>
           </div>
         </div>
       </div>
@@ -25,6 +25,12 @@
 <script>
 export default {
   name: 'CategoryCard',
+  props: {
+    product: {
+      type: Object,
+      required: true,
+    },
+  },
 };
 </script>
 

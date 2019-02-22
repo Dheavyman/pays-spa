@@ -14,6 +14,7 @@
           />
           <label class="label-icon" for="search"><i class="material-icons">search</i></label>
         </div>
+        <button class="search-btn">SEARCH</button>
       </div>
     </div>
     <div class="nav-links col s3">
@@ -87,5 +88,16 @@ nav {
 input[type="search"] {
   background-color: #eeeeee;
   height: 18px !important; /* or height of nav */
+}
+.search-btn {
+  background-color: #fdd835;
+  color: #fafafa;
+  font-size: 15px;
+  font-weight: 600;
+  height: 45px;
+  position: absolute;
+  right: 396px;
+  top: 70px;
+  width: 120px
 }
 </style>

@@ -5,7 +5,7 @@
       <HeaderSection />
     </header>
     <main>
-      <HomePage />
+      <HomePage :products="products" :categories="categories" />
     </main>
     <footer>
       <div class="footer">
@@ -26,11 +26,23 @@ import FooterSection from './components/footer/FooterSection.vue';
 
 export default {
   name: 'app',
+  created() {
+    this.$store.dispatch('getProducts');
+    this.$store.dispatch('getCategories');
+  },
   components: {
     TopHeader,
     HeaderSection,
     HomePage,
     FooterSection,
+  },
+  computed: {
+    products() {
+      return this.$store.state.products;
+    },
+    categories() {
+      return this.$store.state.categories;
+    },
   },
 };
 </script>

@@ -1,51 +1,24 @@
 <template>
-  <ul class="collapsible z-depth-0">
-    <li>
-      <div class="collapsible-header">
-        Men's Wears<i class="material-icons">chevron_right</i>
-      </div>
-    </li>
-    <li>
-      <div class="collapsible-header">
-        Fashion<i class="material-icons">chevron_right</i>
-      </div>
-    </li>
-    <li>
-      <div class="collapsible-header">
-        Electronics<i class="material-icons">chevron_right</i>
-      </div>
-    </li>
-    <li>
-      <div class="collapsible-header">
-        Kitchen<i class="material-icons">chevron_right</i>
-      </div>
-    </li>
-    <li>
-      <div class="collapsible-header">
-        Bedroom Makeover<i class="material-icons">chevron_right</i>
-      </div>
-    </li>
-    <li>
-      <div class="collapsible-header">
-        Makeup for Women<i class="material-icons">chevron_right</i>
-      </div>
-    </li>
-    <li>
-      <div class="collapsible-header">
-        Accessories<i class="material-icons">chevron_right</i>
-      </div>
-    </li>
-    <li>
-      <div class="collapsible-header">
-        Cars and Automobile<i class="material-icons">chevron_right</i>
-      </div>
-    </li>
-  </ul>
+  <div>
+    <ul v-if="categories" class="collapsible z-depth-0">
+      <li v-for="category in categories" :key="category.id">
+        <div class="collapsible-header">
+          {{category.name}}<i class="material-icons">chevron_right</i>
+        </div>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
 export default {
   name: 'CategoriesSection',
+  props: {
+    categories: {
+      type: Array,
+      required: true,
+    },
+  },
 };
 </script>
 
