@@ -1,6 +1,6 @@
 <template>
-  <div class="col s12">
-    <div class="explore-content z-depth-1">
+  <div class="explore-content col s12">
+    <div class="z-depth-1">
       <h6 class="content-header valign-wrapper">EXPLORE POPULAR CATEGORIES</h6>
       <div class="row">
         <div class="col s12 m6 l3">
@@ -33,6 +33,7 @@ export default {
 
 <style lang="scss" scoped>
 .explore-content {
+  margin-bottom: 25px;
   .content-header {
     border-bottom: 1px solid #e0e0e0;
     color: #757575;

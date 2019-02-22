@@ -1,5 +1,9 @@
 <template>
   <div id="app">
+    <header>
+      <TopHeader />
+      <HeaderSection />
+    </header>
     <main>
       <HomePage />
     </main>
@@ -15,12 +19,16 @@
 </template>
 
 <script>
+import TopHeader from './components/header/TopHeader.vue';
+import HeaderSection from './components/header/HeaderSection.vue';
 import HomePage from './components/home/HomePage.vue';
 import FooterSection from './components/footer/FooterSection.vue';
 
 export default {
   name: 'app',
   components: {
+    TopHeader,
+    HeaderSection,
     HomePage,
     FooterSection,
   },
@@ -34,10 +42,13 @@ export default {
 </style>
 
 <style lang="scss" scoped>
+header {
+  margin-bottom: 50px;
+}
 .footer {
   background-color: #424242;
   color: #bdbdbd;
-  height: 250px;
+  min-height: 250px;
 }
 .copyright {
   background-color: #353534;

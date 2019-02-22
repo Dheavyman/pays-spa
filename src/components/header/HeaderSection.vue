@@ -1,44 +1,42 @@
 <template>
-  <div class="">
-    <div class="row valign-wrapper">
-      <div class="col s12 m6 l2">
-        <img src="../../assets/paysmosmo-logo.png" alt="">
-      </div>
-      <div class="search col s12 m9 l7">
-        <div class="nav-wrapper hide-on-med-and-down">
-          <div class="input-field">
-            <input
-              id="search"
-              placeholder="Search for products"
-              type="search"
-              required
-            />
-            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-          </div>
+  <div class="header row valign-wrapper">
+    <div class="col s12 m6 l2">
+      <img src="../../assets/paysmosmo-logo.png" alt="">
+    </div>
+    <div class="search col s12 m9 l7">
+      <div class="nav-wrapper hide-on-med-and-down">
+        <div class="input-field">
+          <input
+            id="search"
+            placeholder="Search for products"
+            type="search"
+            required
+          />
+          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
         </div>
       </div>
-      <div class="nav-links col s3">
-        <ul id="nav-mobile" class="hide-on-med-and-down">
-          <li class="center-align">
-            <a href="sass.html">
-              <i class="material-icons">shopping_cart</i>
-              <span>Cart</span>
-            </a>
-          </li>
-          <li class="center-align">
-            <a href="badges.html">
-              <i class="material-icons">favorite</i>
-              <span>Wishlist</span>
-            </a>
-          </li>
-          <li class="center-align">
-            <a href="collapsible.html">
-              <i class="material-icons">notifications_none</i>
-              <span>Notifications</span>
-            </a>
-          </li>
-        </ul>
-      </div>
+    </div>
+    <div class="nav-links col s3">
+      <ul id="nav-mobile" class="hide-on-med-and-down">
+        <li class="center-align">
+          <a href="sass.html">
+            <i class="material-icons">shopping_cart</i>
+            <span>Cart</span>
+          </a>
+        </li>
+        <li class="center-align">
+          <a href="badges.html">
+            <i class="material-icons">favorite</i>
+            <span>Wishlist</span>
+          </a>
+        </li>
+        <li class="center-align">
+          <a href="collapsible.html">
+            <i class="material-icons">notifications_none</i>
+            <span>Notifications</span>
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
@@ -50,6 +48,10 @@ export default {
 </script>
 
 <style lang='scss' scoped>
+.header {
+  margin: 0 5%;
+  margin-top: 5px;
+}
 nav {
   background-color: #FEFEFE;
   height: inherit;
