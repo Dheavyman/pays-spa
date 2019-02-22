@@ -34,7 +34,7 @@ export default {
   margin-bottom: 15px !important;
 }
 .card-image {
-  height: 270px
+  height: 285px;
   img {
     height: inherit;
   }
