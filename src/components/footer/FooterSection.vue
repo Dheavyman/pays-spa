@@ -64,6 +64,7 @@ export default {
     font-weight: 450;
     line-height: 1.25;
     margin-top: 30px;
+    margin-bottom: 25px;
   }
 }
 .contact, .help, .stay-connected, .back-to-top {
@@ -95,5 +96,20 @@ export default {
 .back-to-top i {
   line-height: 0;
   padding-left: 5px;
+}
+@media only screen and (max-width: 768px) {
+  .contact, .help, .stay-connected, .back-to-top {
+    h6 {
+      font-size: 16px;
+    }
+    li {
+      font-size: 13px;
+      font-weight: 450;
+      margin-bottom: 15px
+    }
+    span {
+      margin-right: 5px;
+    }
+  }
 }
 </style>

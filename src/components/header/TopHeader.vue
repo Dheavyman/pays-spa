@@ -44,7 +44,7 @@ export default {
 }
 @media only screen and (max-width: 768px) {
   .top-nav {
-    padding: 0 35px;
+    padding: 0 20px;
   }
 }
 </style>
