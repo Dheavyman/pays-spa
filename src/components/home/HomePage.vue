@@ -60,7 +60,6 @@ export default {
 .categories-header {
   background-color: #43a047;
   color: #ffffff;
-
   h6 {
     font-size: 15px;
     margin-bottom: 0 !important;
@@ -79,11 +78,9 @@ export default {
   display: flex;
   justify-content: space-between;
   width: 100%;
-
   .how-it-works {
     width: 150px;
   }
-
   li {
     background: #fafafa;
     display: block;
@@ -91,7 +88,6 @@ export default {
     font-weight: 700px;
     list-style-type: none;
   }
-
   .h-line {
     border-left: 2px solid #9e9e9e;
   }

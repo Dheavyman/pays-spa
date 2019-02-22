@@ -57,7 +57,6 @@ export default {
 .collapsible-header {
   display: flex;
   justify-content: space-between;
-
   i {
     margin-right: 0;
   }

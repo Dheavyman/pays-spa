@@ -34,8 +34,7 @@ export default {
   margin-bottom: 15px !important;
 }
 .card-image {
-  height: 270px;
-
+  height: 270px
   img {
     height: inherit;
   }
@@ -43,16 +42,13 @@ export default {
 .card-content {
   padding-left: 0 !important;
   padding-right: 0 !important;
-
   P {
     color: #616161;
   }
-
   i {
     font-size: 20px;
   margin-top: 5px;
   }
-
   .marked {
     color: #fdd835;
   }
@@ -63,12 +59,10 @@ export default {
 .card-content .price {
   display: flex;
   justify-content: space-between;
-
   span {
     color: #616161;
     font-size: 13px;
   }
-
   .strike {
     text-decoration: line-through;
   }

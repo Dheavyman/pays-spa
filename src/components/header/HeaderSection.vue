@@ -61,22 +61,18 @@ nav {
   padding-left: 60px;
   padding-right: 40px;
   width: 100%;
-
   li {
     background: #fafafa;
     display: block;
     flex: 0 1 auto;
     list-style-type: none;
   }
-
   a {
     color: #000000;
   }
-
   i {
     font-size: 25px;
   }
-
   span {
     display: block;
     font-size: 10px;
